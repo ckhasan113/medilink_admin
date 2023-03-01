@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".foreignDoctor.ForeignHospitalDoctorBookingListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/admin_panel_foreign_hospital_doctor_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Hospitals"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="18pt">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="Pending"
+            android:id="@+id/foreignBookingPendingList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:background="#ECD0C8"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="Completed"
+            android:id="@+id/foreignBookingCompletedList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:id="@+id/admin_panel_foreign_hospital_completed_or_pending_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

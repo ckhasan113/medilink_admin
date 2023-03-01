@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".foreignDoctor.ForeignHospitalDoctorListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/admin_panel_foreign_hospital_doctor_toolbar_TV"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Hospitals"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/completedBookingForeignHospitalBtn"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Completed list"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/search_box2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:id="@+id/admin_panel_foreign_hospital_doctor_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

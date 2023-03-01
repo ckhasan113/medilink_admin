@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AdminApp</string>
+
+    <string name="required_field">This field is required</string>
+
+    <string-array name="degree">
+        <item>Degree</item>
+        <item>M.B.B.S</item>
+        <item>F.C.P.S</item>
+        <item>AFR.C.P.S</item>
+    </string-array>
+
+    <string-array name="ambulance_type">
+        <item>All</item>
+        <item>Air</item>
+        <item>Lite</item>
+        <item>Premier</item>
+    </string-array>
+
+    <string-array name="speciality_id">
+        <item>Speciality</item>
+        <item>Emergency</item>
+        <item>Cardiology</item>
+        <item>Skin care</item>
+        <item>Cardiology</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>India</item>
+        <item>Singapore</item>
+        <item>Malaysia</item>
+        <item>England</item>
+    </string-array>
+
+</resources>

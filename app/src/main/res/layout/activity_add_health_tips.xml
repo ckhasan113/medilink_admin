@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".heathtips.AddHealthTipsActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="23pt"
+                    android:gravity="center"
+                    android:text="  Create New Health Tips  "
+                    android:textColor="#FFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textColor="@color/colorSubMain"
+                    android:background="@drawable/search_box"
+                    android:id="@+id/health_tips_image_TV"
+                    android:text="No image available\n\nAdd new?"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_prescription"
+                    android:id="@+id/health_tips_image"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FE5237"
+                    />
+
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tips_title_edt"
+                    android:gravity="start"
+                    android:hint="Health tips title"
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="true"
+                    android:inputType="textMultiLine"
+                    android:padding="1dp"
+                    android:minLines="4"
+                    android:maxLines="20"/>
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/tips_edt"
+                    android:gravity="start"
+                    android:hint="Health tips\nWrite here...."
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:includeFontPadding="true"
+                    android:inputType="textMultiLine"
+                    android:padding="1dp"
+                    android:minLines="4"
+                    android:maxLines="20"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_tip"
+                android:textColor="#fff"
+                android:background="@drawable/search_box2"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Submit tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/update_tip"
+                android:textColor="#fff"
+                android:background="@drawable/search_box2"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/remove_tip"
+                android:textColor="#fff"
+                android:background="@drawable/search_box2"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
